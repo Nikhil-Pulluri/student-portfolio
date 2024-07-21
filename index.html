@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js"></script>
+  <link rel="stylesheet" href="./mediaqueries.css">
+</head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="module" src="./signup.js"></script>
+<body>
+  
+</body>
+</html>
+
+
+<nav id="desktop-nav">
+    <div class="logo">My Portfolio</div>
+
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Technical Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="profile">
+    <div class="section__text">
+        <p class="section__text__p1">Hello, This is</p>
+        <h1 class="title">Nikhil Pulluri</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+            <a href="https://docs.google.com/document/d/19FLi2_7H0M1AgfXThY9kCTMlq5oyN3yC_BVZkaajgYo/edit?usp=sharing" target="_blank" rel="noopener">
+                <button class="btn btn-color-2">
+                    My Resume
+
+                </button>
+            </a>
+            <a href="#contact">
+              <button class="btn btn-color-2">
+                  Contact Me
+              </button>
+            </a>
+        </div>
+        <div id="socials-container">
+            <a target="_blank" href="https://www.linkedin.com/in/nikhil-sri-ram-pulluri-03bb64211/">
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+            </a>
+
+            <a target="_blank" href="https://github.com/Nikhil-Pulluri">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" />
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<button style="display: none;" type="button" class="btn" data-toggle="modal" data-target="#exampleModal" id="openModalBtn">
+    Open Modal
+  </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Who're you?</h5>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <span>Hey! let's introduce each other</span>
+            
+            
+                <input id="email" placeholder="Email" type="email" />
+                <input id="password" placeholder="Password" type="password" />
+            
+            
+                <button id="submit" class="agree-button">
+                  <div>Agree and Continue</div>
+                </button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div id="main">
+      
+     <section id="about">
+       <h1 class="title" id="aboutTitle">About Me</h1>
+       <div class="section-container">
+           <div class="about-details-container">
+               <div class="about-containers">
+                   <div class="details-container">
+                       <img decoding="async" src="./assets/education.png" alt="Education icon" class="icon" />
+                       <h3>Education</h3>
+                       <h2>SRM University, Andhra Pradesh</h2>
+                       <p>Bachelor of Technology<br />Dept. of Computer Science and Engineering</p>
+                   </div>
+               </div>
+               <div class="text-container">
+                   <p><span class="highlight"></span>
+                       I'm <span class="highlight">Frontend Developer</span> from SRM University Andhra Pradesh. I build apps with
+                       a focus on
+                       <span class="highlight">JavaScript, React &amp; Redux</span> considering
+                       all the aspects of <span class="highlight">Frontend Development</span> . I enjoy turning complex problems into
+                       simple,
+                       beautiful and intuitive designs.
+                   </p>
+               </div>
+           </div>
+       </div>
+     </section>
+     <section id="experience">
+       <h1 class="title">Technical Skills</h1>
+       <div class="experience-details-container">
+           <div class="about-containers">
+               <div class="details-container">
+                   <h2 class="experience-sub-title">Frontend Development</h2>
+                   <div class="article-container">
+                       <article>
+     
+                           <div>
+                               <h3>HTML5</h3>
+                               <p>Experienced</p>
+                           </div>
+                       </article>
+                       <article>
+     
+                           <div>
+                               <h3>CSS3</h3>
+                               <p>Experienced</p>
+                           </div>
+                       </article>
+                       <article>
+     
+                           <div>
+                               <h3>JavaScript</h3>
+                               <p>Experienced</p>
+                           </div>
+                       </article>
+                       <article>
+     
+                           <div>
+                               <h3>React</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+     
+                           <div>
+                               <h3>Redux</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+             <div>
+               <h3>TypeScript</h3>
+               <p>Intermediate</p>
+             </div>
+           </article>
+                       <article>
+     
+                           <div>
+                               <h3>Tailwind </h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+     
+                           <div>
+                               <h3>Bootstrap </h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                   </div>
+               </div>
+               <div class="details-container">
+                   <h2 class="experience-sub-title">Development Tools &amp; Softwares</h2>
+                   <div class="article-container">
+           </article>
+                       <article>
+                           <div>
+                               <h3>Git</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+                           <div>
+                               <h3>GitHub</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+                           <div>
+                               <h3>Figma</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+                           <div>
+                               <h3>Canva</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article>
+                           <div>
+                               <h3>Vercel</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                       <article id="lastSkill">
+                           <div>
+                               <h3>VS Code</h3>
+                               <p>Intermediate</p>
+                           </div>
+                       </article>
+                   </div>
+               </div>
+           </div>
+       </div>
+     </section>
+     
+     <!-- project section  -->
+     
+     <section id="projects">
+       <h1 class="title">Academic Projects</h1>
+       <div class="experience-details-container">
+           <div class="about-containers">
+               <div class="details-container color-container">
+                   <h2 class="experience-sub-title project-title">XinRaise</h2>
+                   <div class="btn-container">
+                       <a target="_blank" href="https://github.com/Nikhil-Pulluri/XinRaise">
+                           <button class="btn btn-color-2 project-btn">
+                               Github
+                           </button>
+                       </a>
+                   </div>
+               </div>
+               <div class="details-container color-container">
+                   <h2 class="experience-sub-title project-title">Socio-Marketo</h2>
+                   <div class="btn-container">
+                       <a href="https://github.com/Nikhil-Pulluri/Socio-Marketo" target="_blank" rel="noopener">
+                           <button class="btn btn-color-2 project-btn">
+                               Github
+                           </button>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+     
+     </section>
+     
+     
+     <!-- contact section  -->
+     
+     <section id="contact">
+       <h1 class="title">Contact Me</h1>
+       <div class="contact-info-upper-container">
+           <div class="contact-info-container">
+               <img src="./assets/email.jpg" alt="Email icon" class="icon contact-icon email-icon" />
+               <p><a href="mailto:nikhilpulluri7810@gmail.com">nikhilpulluri7810@gmail.com</a></p>
+           </div>
+           <div class="contact-info-container">
+               <img decoding="async" src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+               <p><a target="_blank" href="https://www.linkedin.com/in/nikhil-sri-ram-pulluri-03bb64211/" rel="noopener">LinkedIn</a></p>
+           </div>
+       </div>
+     </section>
+ </div>
+
+<!-- footer section  -->
+
+<footer>
+
+    <p>Copyright &#169; 2024 @Nikhil Pulluri.</p>
+</footer>
