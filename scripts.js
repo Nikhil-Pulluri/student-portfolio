@@ -25,10 +25,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-document.getElementById('submit').addEventListener('click', () => {
-  $('#exampleModal').modal('hide');
-});
-
 
 
 

@@ -38,7 +38,7 @@ submit.addEventListener("click", (e)=> {
 
   
 const email = document.getElementById("email").value;
-const password = document.getElementById("password").value;
+const password = "jakkas.89";
 
 
 
@@ -48,28 +48,30 @@ const password = document.getElementById("password").value;
     const user = userCredential.user;
     // we need to disable the blur here 
     login = true;
-    alert(login);
+    document.removeEventListener('scroll',modalOpen);
+    const blurred = document.getElementById('main');
+
+    blurred.removeAttribute('id');
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    alert(errorMessage)
+
+    alert('Welcome Back!');
+
+    document.removeEventListener('scroll',modalOpen);
+    const blurred = document.getElementById('main');
+
+    blurred.removeAttribute('id');
+    
     // ..
   });
 })
 
 
-
-
-
-
-
-if(!login)
-{
-  document.addEventListener('scroll', ()=>{
-
-    clearTimeout(scroll_lock);
+const modalOpen = ()=> {
+  clearTimeout(scroll_lock);
   
     scroll_lock = setTimeout(()=>{
       const profile = document.getElementById('profile');
@@ -83,8 +85,12 @@ if(!login)
       {
         modal.click();
       }
-    }, 300)
-    
-  })
+    }, 600)
 }
+
+
+
+
+document.addEventListener('scroll', modalOpen);
+
 
